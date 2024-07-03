@@ -1,0 +1,577 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Moul", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.menu{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(1, 8, 8);
+    padding: 0px 30px;
+    display: flex;
+}
+.menu .logo{
+    width: 20%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    display: flex;
+}
+.logo img{
+    width: 140px;
+    height: 70px;
+    object-fit: cover;
+}
+.menu .link{
+    width: 70%;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+}
+.menu .link ul{
+    display: flex;
+}
+.menu .link ul li {
+    list-style-type: none;
+}
+.menu .link ul li a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: ghostwhite;
+    position: relative;
+}
+.menu .link ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    bottom: -15px;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+.menu .link ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(249, 241, 241);
+    bottom: -15px;
+    right: 0;
+    transition: 0.3s;
+
+}
+.menu .link ul li a:hover::before{
+    width: 50%;
+    transition: 0.3s;
+}
+.menu .link ul li a:hover:after{
+    width: 50%;
+    transition: 0.3s;
+}
+.menu .icons{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.menu .icons ul li{
+    list-style-type: none;
+}
+.menu .icons ul li a i{
+    font-size: 25px;
+    color: white;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+}
+.box .pic{
+    width: 100%;
+    height: 100%;
+}
+.box .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.box .text{
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.box .text h1{
+    color: rgb(240, 238, 238);
+    font-size: 45px;
+
+} 
+.text ul{
+    display: flex;
+    margin-bottom: 10px 30px;
+}
+ .text ul li{
+    list-style-type:square;
+    margin-right:30px;
+}
+.text ul li a{
+    text-decoration: none;
+    color: rgb(251, 248, 248);
+}
+.text button[type="button"]{
+    width: 150px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    background-color: rgb(66, 52, 31);
+}
+#btn2{
+    background-color: rgb(169, 161, 161);
+    color: white;
+}
+#btn1:hover{
+    border: 2px solid rgb(56, 25, 25);
+    /* color: rgb(81, 78, 78); */
+    transition: all 0.3s;
+    background-color: rgb(209, 204, 204);
+}
+#btn2:hover{
+    background-color: rgb(255, 0, 60);
+    transition: all 0.3s;
+}
+.title{
+    width: 100%;
+    height: 200px;
+}
+.news{
+    width: 100%;
+    height:400px;
+    /* background-color: blue; */
+    margin-top: 50px; 
+    display: flex;  
+    padding: 0px 50px;
+
+}
+.news .title{
+    width: 30%;
+    height: 100%;
+    /* background-color: brown; */
+    align-items: center;
+    display: flex;
+}
+.title h1{
+    font-size: 20px;
+    color: rgb(21, 15, 15);
+    position: relative;
+}
+.title h1::before{
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    background-color: black;
+    bottom: -20PX;
+}
+.news .main{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.news .main .pic{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    border: 4px rgb(42, 34, 34);
+    overflow: hidden;
+}
+.news .main .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.object1{
+    width: 100%;
+    height: 400px;
+    /* background-color: aquamarine; */
+    margin-top: 50px; 
+    display: flex;  
+    padding: 0px 50px;
+}
+.object1 .discription1{
+    width: 20%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    padding: 7rem 0px;    
+}
+.object1 .discription1 h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;  
+    position: relative;  
+}
+.discription1 h2::before{
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    background-color: black;
+    bottom: -20PX;
+    left:10px;
+}
+.discription #bton3{
+    width: 180px;
+    margin-top: 20px;
+    border: 2px solid black;
+    font-size: 16px;
+    color: black;
+    padding: 13px 10px;
+
+}
+.object1 .profile{
+    width: 80%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.object1 .profile .up{
+    width: 31%;
+    height: 100%;
+    /* background-color: rgb(27, 96, 155); */
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgb(1, 8, 8);
+}
+
+.object1 .profile .up .imge1{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border-radius: 5px;
+}
+.object1 .profile .up .imge1 img{
+    width: 100%;
+    height: 48%;
+    object-fit: cover;
+}
+.object1 .profile .up:hover .imge1 img{
+    transform: scale(1.1);
+}
+.object1 .profile .up .title{
+    width: 100%;
+    height: 33%;
+    /* background-color: aqua; */
+    padding: 5px 10px;
+}
+.object1 .profile .up .title #ton{
+    border: none;
+    padding: 1px 8px;
+    color: black;
+    background-color: cornsilk;
+    padding:15px 10px ;
+}
+.object1 .profile .up .title:hover #ton{
+    color: crimson;
+    background-color: rgb(231, 223, 215);
+}
+.object1 .profile .up .title h3{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+}
+.object1 .profile .up .title h3 a{
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+}
+.object1 .profile .up .title:hover h3 a{
+    text-decoration: underline;
+}
+.object1 .profile .pro-up {
+    width: 100%;
+    height: 20%;
+    padding: 14px 10px ;
+    display: flex;
+    align-items: center;
+    
+}
+.object1 .profile .pro-up img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.object1 .profile .up .imge1{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border-radius: 5px;
+}
+.object1 .profile .up .imge1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.object1 .profile .up:hover .imge1 img{
+    transform: scale(1.1);
+}
+.object1 .profile .up .title{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+    margin-top: 4px;
+}
+.object11 .profile .up .title #ton{
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color: cornsilk;
+    padding:15px 10px ;
+}
+.object1 .profile .up .title:hover #ton{
+    color: crimson;
+    background-color: rgb(231, 223, 215);
+}
+.object1 .profile .up .title h3{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+}
+.object1 .profile .up .title h3 a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.object1 .profile .up .title:hover h3 a{
+    text-decoration: underline;
+}
+.object1 .profile .pro-up {
+    width: 100%;
+    height: 30%;
+    padding: 15px 1opx ;
+    display: flex;
+    align-items: center;
+    
+}
+.object1 .profile .pro-up img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.object1 .profile .up{
+    width: 31%;
+    height: 100%;
+    /* background-color: rgb(27, 96, 155); */
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgb(1, 8, 8);
+}
+
+.object1 .profile .up .imge1{
+    width: 100%;
+    height: 40%;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border-radius: 5px;
+}
+.object1 .profile .up .imge1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.object1 .profile .up:hover .imge1 img{
+    transform: scale(1.1);
+}
+.object1 .profile .up .title{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+    margin-top: 4px;
+}
+.object1 .profile .up .title #ton{
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color: cornsilk;
+    padding:15px 10px ;
+}
+.object1 .profile .up .title:hover #ton{
+    color: crimson;
+    background-color: rgb(231, 223, 215);
+}
+.object1 .profile .up .title h3{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+.object1 .profile .up .title h3 a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.object1 .profile .up .title:hover h3 a{
+    text-decoration: underline;
+}
+.object1 .profile .pro-up {
+    width: 100%;
+    height: 30%;
+    padding: 5px 10px ;
+    display: flex;
+    align-items: center;
+    
+}
+.object1 .profile .pro-up img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+ .total-text{
+    width: 100%;
+    height: 120vh;
+    /* background-color: antiquewhite; */
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+.total-text .text-menu{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+.total-text .text-main{
+    width: 100%;
+    height: 85%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+}
+.total-text .text-main .t-main-box1{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.537);
+    overflow: hidden;
+}
+.t-main-box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.total-text .text-main .t-main-box1:hover img{
+    transform: scale(1.1);
+}
+.total-text .text-main .t-main-box2{
+    width: 38%;
+    height: 100%;
+}
+.total-text .text-main .t-main-box2 .t-main-box2-up{
+    width: 100%;
+    height: 48%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.521);
+    overflow: hidden;
+    
+}
+.t-main-box2-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.total-text .text-main .t-main-box2 .t-main-box2-up:hover img{
+    transform: scale(1.1);
+}
+.total-text .text-main .t-main-box2 .t-main-box2-down{
+    width: 100%;
+    height: 49%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.774);
+    overflow: hidden;
+    margin-top: 19px;
+}
+.t-main-box2-down img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.total-text .text-main .t-main-box2 .t-main-box2-down:hover img{
+    transform: scale(1.1);
+}
+.discription{
+    width: 100%;
+    height: auto;
+    padding: 10px 50px;
+    position: absolute;
+    top: 35%;
+
+}
+.discription h1 {
+    margin-bottom: 20px;
+    position: relative;
+    color: rgb(249, 246, 246);
+}
+.discription p {
+    margin-bottom: 20px;
+    position: relative;
+    color: rgb(249, 246, 246);
+}
+.discription p::before{
+    content: "";
+    position:absolute;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    bottom: -10px;
+}
+.discription h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: aliceblue;
+} 
+.background{
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+    margin-top: 50px;  
+}
+.background .icon1{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(138, 197, 42);
+}
+.background .icon1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.background .text4{
+    width: 100%;
+    height: 30%;
+    background-color: coral;
+}
+
